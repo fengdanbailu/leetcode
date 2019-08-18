@@ -1,7 +1,8 @@
 /**
- * @param {number[]} nums
- * @param {number} target
- * @return {number[]}
+ *
+ * @param nums
+ * @param target
+ * @returns {*[]}
  */
 var twoSum = function(nums, target) {
     var map={};

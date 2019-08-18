@@ -1,10 +1,7 @@
 /**
- * @param {number} x
- * @return {number}
- */
-/**
- * @param {string} s
- * @return {boolean}
+ *
+ * @param s
+ * @returns {boolean}
  */
 var isNumber = function(s) {
     return /^[+-]?([0-9]*\.?[0-9]+|[0-9]+\.?[0-9]*)([eE][+-]?[0-9]+)?$/.test(s.trim());

@@ -1,3 +1,9 @@
+/**
+ *
+ * @param l1
+ * @param l2
+ * @returns {*}
+ */
 var addTwoNumbers = function (l1, l2) {
     var p1=l1;
     var p2=l2;

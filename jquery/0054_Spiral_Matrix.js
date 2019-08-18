@@ -1,6 +1,7 @@
 /**
- * @param {number[][]} matrix
- * @return {number[]}
+ *
+ * @param matrix
+ * @returns {Array}
  */
 var spiralOrder = function(matrix) {
     var list=[];
