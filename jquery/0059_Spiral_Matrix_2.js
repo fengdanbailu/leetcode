@@ -1,8 +1,9 @@
-/**
- * @param {number} n
- * @return {number[][]}
- */
+
 var top,right,bottom,left,len,direct;
+/**
+ *
+ * @param n
+ */
 var generateMatrix = function(n) {
     //定义n*n的数组
     var number=init_matrix(n);

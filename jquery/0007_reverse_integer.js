@@ -1,6 +1,7 @@
 /**
- * @param {number} x
- * @return {number}
+ *
+ * @param x
+ * @returns {*}
  */
 var reverse = function(x) {
     var result;

@@ -1,6 +1,7 @@
 /**
- * @param {number[]} nums
- * @return {number}
+ *
+ * @param nums
+ * @returns {*}
  */
 var singleNumber = function(nums) {
     var result=nums[0];

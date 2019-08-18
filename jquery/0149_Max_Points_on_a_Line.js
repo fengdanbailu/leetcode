@@ -1,10 +1,12 @@
-/**
- * @param {Point[]} points
- * @return {number}
- */
+
 var SAME="same";
 var INF="inf";
 const TRIGER=1000000000000.0;
+/**
+ *
+ * @param points
+ * @returns {number}
+ */
 var maxPoints = function(points) {
 
     var sum=0;

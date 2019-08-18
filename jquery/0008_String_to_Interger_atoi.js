@@ -1,6 +1,7 @@
 /**
- * @param {string} str
- * @return {number}
+ *
+ * @param str
+ * @returns {number}
  */
 var myAtoi = function(str) {
     var result=parseInt(str);

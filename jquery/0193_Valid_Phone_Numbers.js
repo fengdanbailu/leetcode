@@ -1,4 +1,7 @@
-
+/**
+ *
+ * @returns {string}
+ */
 var writeShell = function() {
     // this is a sql
     return "grep -P '^(\\d{3}-|\\(\\d{3}\\) )\\d{3}-\\d{4}$' file.txt";

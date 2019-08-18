@@ -1,6 +1,7 @@
 /**
- * @param {number[]} nums
- * @return {number}
+ *
+ * @param nums
+ * @returns {number}
  */
 var majorityElement = function(nums) {
     var map={};

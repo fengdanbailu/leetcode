@@ -1,4 +1,7 @@
-
+/**
+ *
+ * @returns {string}
+ */
 var writeShell = function() {
     // this is a sql
     return "ncol=`head -n 1 file.txt | wc -w`\n" +

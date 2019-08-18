@@ -1,29 +1,27 @@
 /**
- *
- * @param root
- * @param sum
- * @returns {Array}
+ * @param {TreeNode} root
+ * @return {number}
  */
-var pathSum = function(root, sum) {
-    return root?pathOneLevel(root,sum,[],[]):[];
+var sumRootToLeaf = function(root) {
+    return sumOneLevel(root,root.val);
 };
-var pathOneLevel=function(root,sum,path,allPath){
-    path.push(root.val);
-    if(!root.left && !root.right && root.val===sum){
-        allPath.push(path);
-    }
+var sumOneLevel = function(root,val){
+    var newval=0;
     if(root.left){
-        pathOneLevel(root.left,sum-root.val,path.slice(),allPath);
+        newval+=sumOneLevel(root.left,root.left.val+val*2);
     }
     if(root.right){
-        pathOneLevel(root.right,sum-root.val,path.slice(),allPath);
+        newval+=sumOneLevel(root.right,root.right.val+val*2);
     }
-    return allPath;
+    if(!root.left && !root.right){
+        newval=val;
+    }
+    return newval;
 }
 
 function TreeNode(val) {
-     this.val = val;
-     this.left = this.right = null;
+    this.val = val;
+    this.left = this.right = null;
 }
 
 function createTree(list){
@@ -76,15 +74,9 @@ function print(str){
 
 
 (function (){
-    var root=createTree([5,4,8,11,null,13,4,7,2,null,null,null,null,5,1]);
-    var input={
-        root:root,
-        sum:22
-    };
-    var output=pathSum(input.root,input.sum);
-    print(root);
-    printTree(root);
-    // print(input);
+    var input=createTree([1,0,1,0,1,0,1]);
+    var output=sumRootToLeaf(input);
+    print(input);
     print(output);
 
 }());

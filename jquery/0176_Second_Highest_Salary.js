@@ -1,4 +1,7 @@
-
+/**
+ *
+ * @returns {string}
+ */
 var writeSQL = function() {
     // this is a sql
     return "select (\n" +
