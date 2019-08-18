@@ -1,7 +1,4 @@
-/**
- * @param {number[]} nums
- * @return {number}
- */
+
 var writeSQL = function() {
     // this is a sql
     return "select FirstName, LastName, City, State from Person as a left join Address as b on a.PersonId=b.PersonId";

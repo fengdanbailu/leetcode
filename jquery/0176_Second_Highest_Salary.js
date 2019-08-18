@@ -1,7 +1,4 @@
-/**
- * @param {number[]} nums
- * @return {number}
- */
+
 var writeSQL = function() {
     // this is a sql
     return "select (\n" +

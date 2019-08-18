@@ -1,7 +1,4 @@
-/**
- * @param {number[]} nums
- * @return {number}
- */
+
 var writeShell = function() {
     // this is a sql
     return "tail -n +10 file.txt | head -1 ";

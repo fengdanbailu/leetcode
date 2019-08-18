@@ -1,7 +1,4 @@
-/**
- * @param {number[]} nums
- * @return {number}
- */
+
 var writeShell = function() {
     // this is a sql
     return "cat words.txt | tr -s ' ' '\\n' | sort | uniq -c | sort -r | awk '{ print $2, $1 }'";
