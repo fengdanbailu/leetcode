@@ -45,8 +45,6 @@ func reverseFirstK(A []int, k int) []int {
 		A[i] = A[k-1-i]
 		A[k-1-i] = tmp
 	}
-	fmt.Println(k)
-	fmt.Println(A)
 	return A
 }
 
