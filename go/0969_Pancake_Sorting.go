@@ -6,7 +6,6 @@ import (
 
 func pancakeSort(A []int) []int {
 	var result []int
-
 	for i := range A[0:len(A)] {
 		var k = len(A) - i
 		var num = findMaxIndexFromFirstK(A, k)
@@ -48,7 +47,7 @@ func reverseFirstK(A []int, k int) []int {
 	return A
 }
 
-func main() {
+func f0969() {
 	input := []int{1, 2, 3}
 	fmt.Println(input)
 	output := pancakeSort(input)
