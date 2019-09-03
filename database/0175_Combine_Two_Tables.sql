@@ -1,3 +1,5 @@
+Drop table if exists `Person`;
+
 CREATE TABLE `Person` (
 `PersonId`INT (11) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT  'id主键',
 `FirstName` VARCHAR (20) NOT NULL COMMENT '名字',

@@ -1,3 +1,5 @@
+Drop table if exists `Employee`;
+
 CREATE TABLE `Employee` (
 `Id`INT (11) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT  'id主键',
 `Salary` VARCHAR (20) NOT NULL COMMENT '薪水',
