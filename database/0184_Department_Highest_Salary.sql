@@ -27,3 +27,19 @@ PRIMARY KEY (`Id`)
 
 INSERT INTO `Department` (`Name`) VALUES ('IT');
 INSERT INTO `Department` (`Name`) VALUES ('Sales');
+
+
+
+
+select b.Name as Department, a.Name as Employee,a.Salary as Salary from Employee as a 
+join Department as b on a.DepartmentId = b.Id 
+join (SELECT DepartmentId, MAX(Salary) as Salary FROM Employee GROUP BY DepartmentId) as c on a.DepartmentId=c.DepartmentId and a.Salary=c.Salary
+
+
+
+select b.Name as Department, a.Name as Employee, a.Salary as Salary from Employee as a 
+join Department as b on a.DepartmentId = b.Id
+join Employee c on c.DepartmentId = a.DepartmentId and c.Salary >= a.Salary
+group by b.Name, a.Name, a.Salary having count(distinct c.Salary) <=3 order by a.Salary desc
+
+
