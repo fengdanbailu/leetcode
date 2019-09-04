@@ -1,5 +1,5 @@
 Drop table if exists `cinema`;
-CREATE TABLE `stadium` (
+CREATE TABLE `cinema` (
 `id`INT (11) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT  'id主键',
 `movie` VARCHAR (20) NOT NULL COMMENT '电影名',
 `description`  VARCHAR (20) NOT NULL COMMENT '描述',
@@ -16,4 +16,4 @@ INSERT INTO `cinema` (`movie`,`description`,`rating`) VALUES ('Ice Song','Fantac
 INSERT INTO `cinema` (`movie`,`description`,`rating`) VALUES ('House card','Interesting',9.1);
 
 
-select * from stadium;
+select * from cinema;
