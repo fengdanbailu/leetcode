@@ -12,6 +12,7 @@ INSERT INTO `Person` (`Email`) VALUES ('bob@example.com');
 INSERT INTO `Person` (`Email`) VALUES ('john@example.com');
 
 
+select * from Person
 
 
 
