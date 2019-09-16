@@ -45,5 +45,14 @@ INSERT INTO `Users` (`Users_Id`,`Banned`,`Role`) VALUES (13,"No","driver");
 select * from `Trips`;
 select * from `Users`;
 
+Select tb.Request_at as Day,
+round(sum(case when tb.status = 'completed' then 0 else 1 end) / count(*),2) as 'Cancellation Rate'
+from
+(Select u.Users_Id,u.Banned,u.Role,t.Request_at,t.status from Users u inner join Trips t
+on u.Users_Id = t.Client_Id
+where u.Banned = 'No'
+) as tb
+where tb.Request_at between '2013-10-01' and '2013-10-03'
+group by tb.Request_at
 
 

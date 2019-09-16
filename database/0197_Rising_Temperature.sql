@@ -14,3 +14,6 @@ INSERT INTO `Weather` (`RecordDate`,`Temperature`) VALUES ('2015-01-03',20);
 INSERT INTO `Weather` (`RecordDate`,`Temperature`) VALUES ('2015-01-04',30);
 
 select * from Weather;
+
+
+select A.Id from Weather as A inner join Weather as B on to_days(A.RecordDate) = to_days(B.RecordDate)+1 and A.Temperature > B.Temperature;
