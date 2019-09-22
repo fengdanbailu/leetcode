@@ -15,4 +15,5 @@ INSERT INTO `salary` (`name`,`sex`,`salary`) VALUES ('C','m',5500);
 INSERT INTO `salary` (`name`,`sex`,`salary`) VALUES ('D','f',500);
 
 
+update salary set sex = if(sex='m','f','m');
 select * from salary;

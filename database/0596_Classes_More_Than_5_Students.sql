@@ -20,3 +20,4 @@ INSERT INTO `courses` (`student`,`class`) VALUES ('I','Math');
 
 
 select * from courses;
+select `class` from courses group by `class` having count(distinct student)>=5

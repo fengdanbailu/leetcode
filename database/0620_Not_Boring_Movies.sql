@@ -16,4 +16,4 @@ INSERT INTO `cinema` (`movie`,`description`,`rating`) VALUES ('Ice Song','Fantac
 INSERT INTO `cinema` (`movie`,`description`,`rating`) VALUES ('House card','Interesting',9.1);
 
 
-select * from cinema;
+select id,movie,description,rating from cinema where id%2=1 and description<>'boring' order by rating desc
