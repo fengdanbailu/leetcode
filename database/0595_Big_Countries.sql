@@ -16,3 +16,5 @@ INSERT INTO `World` (`name`,`continent`,`area`,`population`,`gdp`) VALUES ('Ando
 INSERT INTO `World` (`name`,`continent`,`area`,`population`,`gdp`) VALUES ('Angola','Africa',1246700,20609294,100990000);
 
 select * from World;
+
+select name,population,area from world where population >25000000 or area > 3000000
