@@ -34,6 +34,8 @@ function print(str){
     console.log(str);
 }
 
+// 解体思路，滑动窗口思想；
+
 
 (function (){
     var input = {
