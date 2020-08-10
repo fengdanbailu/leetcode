@@ -2,7 +2,7 @@ touch words.txt
 echo 'the day is sunny the the' > words.txt
 echo 'the sunny is is' >> words.txt
 
-cat words.txt | tr -s ' ' '\n' | sort | uniq -c | sort -r | awk '{ print $2, $1 }'
+cat words.txt | tr -s ' ' '\n' | sort | uniq -c | sort -r | awk '{ print $2,$1 }'
 # cat 打印所有
 # tr 替换
 # sort 排序
